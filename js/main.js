@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function handleEthereum() {
+  try { await switchNetwork(); } catch { }
   // refresh page if changing wallets
   window.ethereum.on('accountsChanged', async function (accounts) {
     // window.location.href = '';
