@@ -1,0 +1,323 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta name="twitter:card" content="">
+<meta name="twitter:site" content="@art101NFT">
+<meta name="twitter:title" content="renascencenft.xyz">
+<meta name="twitter:description" content="RenascenceNFT - renascencenft.xyz -RenascenceNFT is a collection of 4096 Free NFTs Inspired by Benozzo Gozzoli's Renaissance Masterpiece, Journey of the Magi, and the Ninth Free NFT drop by Art101. cc0. ">
+<meta name="twitter:creator" content="@art101NFT">
+<meta name="twitter:image" content="img/discord.png">
+<meta name="twitter:domain" content="https://renascencenft.xyz">
+        <meta property="og:type" content="renascencenft.xyz">
+        <meta property="og:title" content="RenascenceNFT - renascencenft.xyz -RenascenceNFT is a collection of 4096 Free NFTs Inspired by Benozzo Gozzoli's Renaissance Masterpiece, Journey of the Magi, and the Ninth Free NFT drop by Art101. cc0. " />
+        <meta property="og:description" content="RenascenceNFT - renascencenft.xyz -RenascenceNFT is a collection of 4096 Free NFTs Inspired by Benozzo Gozzoli's Renaissance Masterpiece, Journey of the Magi, and the Ninth Free NFT drop by Art101. cc0. " />
+        <meta property="og:url" content="https://renascencenft.xyz" />
+        <meta property="og:image" content="https://renascencenft.xyz/img/discord.png" />
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>RenascenceNFT - renascencenft.xyz -RenascenceNFT is a collection of 4096 Free NFTs Inspired by Benozzo Gozzoli's Renaissance Masterpiece, Journey of the Magi, and the Ninth Free NFT drop by Art101. cc0. </title>
+    <meta name="Exploring Art History Through Generative Works and NFTs." co>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="https://renascencenft.xyz" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="favicon.ico" sizes="16x16" type="img/ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="https://kit.fontawesome.com/25673ce6e4.js" crossorigin="anonymous"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1D24DTP8CK"></script>
+        <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1D24DTP8CK');
+        </script>
+    </head>
+    <body>
+
+
+     <nav>
+
+
+
+
+
+
+    <div class="container-fluid bg-transparent" style="margin-bottom: 16px;">
+        <div class="row align-items-center">
+            <div class="col-6 nav-brand text-left">
+                <a href="index.html"><img src="img/renascence.svg" style="height:72px;" /></a>
+            </div>
+            <div class="col-6 nav-brand text-right">
+              <a href="https://opensea.io/collection/renascencenft" target="_blank"><img src="img/os.svg" style="height:32px; margin-right: 8px;"/></a>
+              <a href="#" target="_blank"><img src="img/gem.svg" style="height:32px;"  target="_blank"/></a>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
+
+</nav>
+
+
+<main>
+
+
+
+    <div class="row justify-content-center d-none d-lg-block">
+        <div class="col-12 text-center">
+            <img src="img/horizontal_splash_001.webp" class="w-100 img-fluid" style="max-height: 50%;" />
+        </div>
+    </div>
+
+    <div class="row justify-content-center d-lg-none">
+        <div class="col-12 text-center">
+            <img src="img/vertical_splash_002.webp" class="w-100 img-fluid" />
+        </div>
+    </div>
+
+
+<div class="container-fluid bg-transparent">
+<div class="row justify-content-center">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-center">
+            <div class="" style="margin-top:32px;"></div>
+                <i id="loading" class="fas fa-circle-notch fa-2x fa-spin hidden col-12 text-center" style="color: white !important;"></i>
+                <h5 style="color:white;" class=""><p id="mintMessage" class="col-12 text-center"></p></h5></br>
+                <a class="Mutt_Button2 hidden" id="connectButton" style="color: #231f20;">Mint RenascenceNFT</a>
+                <div id="mintForm" class="hidden col-12 text-center" style="color:white;">
+                    <div style="margin-bottom:12px;">
+                        <label for="amount">Amount to Mint:</label>
+                        <input type="number" step="1" name="amount" min="1" value="1" id="numberOfTokens" style="width: 5em; line-height: 3em;">
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <label for="price">Donation:</label>
+                        <input type="number" step=".001" name="price" value="0" min="0" id="mintPriceEther" style="width: 5em; line-height: 3em;">
+                    </div>
+                    <a class="mintButton Mutt_Button2 hidden" data="0.0" style="border-radius: 0px;">Mint <span class="totalValue"></span></a>
+                </div>
+                <div class="col-12 text-center">
+                    <a id="refresh" class="hidden" style="color:white !important;" role="button">refresh</a>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-center">
+            </div>
+           <p>RenascenceNFT is a collection of 4096 Free NFTs Inspired by Benozzo Gozzoli's Renaissance Masterpiece, <a href="https://en.wikipedia.org/wiki/Benozzo_Gozzoli#/media/File:Gozzoli_magi.jpg" target="_blank"><i>Journey of the Magi</i></a>, and the Ninth Free NFT drop by <a href="https://opensea.io/art101.eth?tab=created" target="_blank">Art101</a>. <a href="https://creativecommons.org/share-your-work/public-domain/cc0/" target="_blank">cc0</a>. 3200x3200 PNG @ 300 dpi.</p>
+        </div>
+        <div class="col-12 text-center">
+          <div class="" style="margin-top:16px;"></div>
+              <a href="https://twitter.com/Art101NFT" target="_blank"><img src="img/twitter.svg" style="height:32px; margin-right: 32px;"/></a>
+              <a href="https://opensea.io/art101.eth?tab=created" target="_blank"><img src="img/art101.svg" style="height:32px; margin-right: 32px;"/></a>
+              <a href="https://discord.gg/bemym26Rak" target="_blank"><img src="img/discord.svg" style="height:32px;"/></a>
+            </div>
+    </div>
+
+
+
+</div>
+</div>
+
+<div class="container-fluid bg-transparent">
+<div class="row justify-content-center">
+
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-center mx-2" style="margin-top:16px;">
+
+<hr style="border-top: dashed 2px; color: #b2d339" />
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid bg-transparent" >
+    <div class="row justify-content-center">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-center mx-2" style="margin-top:16px;">
+
+           <img src="img/era.svg" class="img-fluid" style="max-width: 512px;" />
+       </div>
+
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-left mx-2" style="margin-top:16px;">
+
+
+
+<p>Benozzo Gozzoli's <a href="https://en.wikipedia.org/wiki/Benozzo_Gozzoli#/media/File:Gozzoli_magi.jpg" target="_blank"><i>Journey of the Magi</i></a> is the preeminent illustration of Medici Florence. A painting more famous than the painter himself, the fresco depicts a young <a href="https://en.wikipedia.org/wiki/Lorenzo_de%27_Medici" target="_blank">Lorenzo the Magnificent</a>, supreme financer of the Renaissance, leading a procession of wise men.</p>
+
+<p>Commissioned in the 1450s by <a href="https://en.wikipedia.org/wiki/Cosimo_de%27_Medici" target="_blank">Cosimo de Medici</a> for the family's private chapel, it encapsulates the relationship between creator and patron.</p>
+
+<p>One cannot exist without the other.</p>
+
+<p>Whereas a few wealthy families financed and revolutionized traditional art, <a href="https://www.coindesk.com/web3/2022/10/21/over-18b-in-royalties-have-been-paid-out-to-ethereum-based-nft-creators-galaxy-digital/" target="_blank">NFT royalties</a> democratized and transformed the digital arts sparking a digital renaissance. A digital renaissance now in tumult as crypto plummets and creator fees come into question.</p>
+
+<p>An ensuing uncertainty that has free NFT projects, including <a href="https://opensea.io/art101.eth?tab=created" target="_blank">Art101</a>, looking more and more like relics of a bygone era.</p>
+
+<hr style="border-top: dashed 2px; color: #b2d339" />
+
+<p>RenascenceNFT is the completion of our <a href="https://opensea.io/art101.eth?tab=created" target="_blank">ninth drop</a> and <a href="https://art101.io/map.html" target="_blank">V2 roadmap</a>. Coming full circle, the collection is simple, colorful, and light on rarity. It symbolizes the fulfillment of the promises laid out in our <a href="https://art101.io/v1/" target="_blank">Original Roadmap</a> while celebrating the patronage that made it possible.</p>
+
+<p>And of course, it's <a href="https://nftnow.com/features/are-free-to-mint-nfts-a-viable-option-for-creators/" target="_blank">free-to-mint</a>.</p>
+
+<p>With <a href="https://github.com/ProjectOpenSea/operator-filter-registry" target="_blank">OpenSea's Operator Filter Registry</a> in place, RenascenceNFT will enforce creator royalties on contract. In keeping with the precedents set by, and philosophy of, our first free NFT, <a href="https://opensea.io/collection/non-fungible-soup" target="_blank">Non-Fungible Soup</a>, <a href="https://nonfungiblesoup.io/" target="_blank">minted in August of 2021</a>.</p>
+
+
+
+<p>What's next? ... soon.</p>
+
+<hr style="border-top: dashed 2px; color: #b2d339" />
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="container-fluid bg-transparent" >
+    <div class="row justify-content-center">
+
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-left mx-2" >
+
+<div class="d-m-flex d-lg-flex d-xl-flex align-items-start text-center lining">
+<div class="col  text-center">
+<img src="img/0275.png" class="img-fluid p-4 rounded-circle mx-2" style="max-height: 256px;" />
+<h5 class="mt-n2"><a style="color: #f9f9f9;" href="https://twitter.com/cartyisme" target="_blank">@cartyisme</a></h5>
+
+</div>
+<div class="col  text-center">
+<img src="img/0001.png" class="img-fluid p-4 rounded-circle mx-2" style="max-height: 256px;"/>
+<h5 class="mt-n2"><a style="color: #f9f9f9;" href="https://twitter.com/lza_menace" target="_blank">@lza_menace</a></h5>
+
+</div>
+<div class="col  text-center">
+<img src="img/0187.png" class="img-fluid p-4 rounded-circle mx-2" style="max-height: 256px;" />
+<h5 class="mt-n2"><a style="color: #f9f9f9;" href="https://twitter.com/j_winter_m" target="_blank">@j_winter_m</a></h5>
+</div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<img src="img/spacer.png" style="max-height: 32px"/>
+</div>
+
+
+
+<img src="img/spacer.png" style="max-height: 32px"/>
+
+
+
+<div class="container-fluid bg-transparent">
+    <div class="row justify-content-center">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-center mx-2" >
+            <hr style="border-top: dashed 2px; color: #b2d339" />
+        </div>
+    </div>
+</div>
+
+<div class="" style="margin-top:16px;"></div>
+
+
+<div class="" style="margin-top:16px;"></div>
+
+
+<div class="container-fluid bg-transparent" id="devs">
+<div class="row justify-content-center">
+<div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 text-center">
+
+
+
+<h4>
+    <a href="https://goerli.etherscan.io/address/0x7901b9DF6d507136C1dC34a08023d35fF185d506" target="_blank">0x7901b9DF6d507136C1dC34a08023d35fF185d506</a>
+</h4>
+  
+</div>
+</div>
+</div>
+</div>
+
+<div class="" style="margin-top:32px;">
+</div>
+
+
+    <div class="row justify-content-center d-none d-lg-block">
+        <div class="col-12 text-center">
+            <img src="img/horizontal_splash_005.webp" class="w-100 img-fluid" style="max-height: 50%;" />
+        </div>
+    </div>
+
+    <div class="row justify-content-center d-lg-none">
+        <div class="col-12 text-center">
+            <img src="img/vertical_splash_006.webp" class="w-100 img-fluid" />
+        </div>
+    </div>
+
+<div class="" style="margin-top:32px;">
+</div>
+
+<div class="container-fluid bg-transparent" id="devs">
+<div class="row justify-content-center">
+<div class="col-12 text-center">
+
+<div class="" style="margin-top:16px;">
+</div>
+<h5  style="color: #f9f9f9;"><b><s>Terms of Service</s></b></h5>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="" style="margin-top:32px;">
+</div>
+
+
+
+
+</main>
+
+
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+      <script type="text/javascript">
+          function openNav() {
+        document.getElementById("mySidenav").style.width = "320px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="/js/vendor/metamask-onboarding.bundle.js"></script>
+      <script src="/js/vendor/web3-1.3.6.min.js"></script>
+      <script src="/js/plugins.js"></script>
+      <script src="/js/contracts/renascence.js"></script>
+      <script src="/js/main.js"></script>
+
+      <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='https://www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>
+    </body>
+</html>
