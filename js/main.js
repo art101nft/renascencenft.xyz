@@ -1,5 +1,5 @@
-const contractAddress = '0x7901b9DF6d507136C1dC34a08023d35fF185d506'; // goerli
-const chainId = '5'; // goerli
+const contractAddress = '0x501a31185927136E87cDfC97dDd4553D8eC1bb4A'; // mainnet
+const chainId = '1'; // mainnet
 const w3 = new Web3(Web3.givenProvider || "http://127.0.0.1:7545");
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -165,17 +165,6 @@ async function mint(mintPrice, isPublic) {
     });
     $('#mintMessage').html(`Attempting to mint ${amountToMint} tokens for ${Number(w3.utils.fromWei((gasLimit * gasPrice + mintValueWei).toString())).toFixed(5)} Ξ to wallet <b>${walletShort}</b>`);
     res = await contract.methods.mintPublic(amountToMint).send({
-      from: walletAddress,
-      gasPrice: gasPrice,
-      gas: gasLimit,
-      value: mintValueWei
-    });
-  } else {
-    await contract.methods.mintReserved(dist.Index, walletAddress, dist.Amount, dist.Proof, amountToMint).estimateGas({from: walletAddress}, function(err, gas){
-      gasLimit = gas;
-    });
-    $('#mintMessage').html(`Attempting to mint ${amountToMint} tokens for ${Number(w3.utils.fromWei((gasLimit * gasPrice + mintValueWei).toString())).toFixed(5)} Ξ to wallet <b>${walletShort}</b>`);
-    res = await contract.methods.mintReserved(dist.Index, walletAddress, dist.Amount, dist.Proof, amountToMint).send({
       from: walletAddress,
       gasPrice: gasPrice,
       gas: gasLimit,
