@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function handleEthereum() {
-  try { await switchNetwork(); } catch { }
+  switchNetwork();
   // refresh page if changing wallets
   window.ethereum.on('accountsChanged', async function (accounts) {
     // window.location.href = '';
@@ -64,14 +64,18 @@ async function handleEthereum() {
 }
 
 async function switchNetwork(){
-  // don't do this if no metamask (errors on coinbase wallet)
-  if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-    return false;
-  }
-  await ethereum.request({
-    method: 'wallet_switchEthereumChain',
-    params: [{ chainId: `0x${chainId}` }],
-  });
+    // don't do this if no metamask (errors on coinbase wallet)
+    try {
+        if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
+            return false;
+        }
+        await ethereum.request({
+            method: 'wallet_switchEthereumChain',
+            params: [{ chainId: `0x${chainId}` }],
+        });
+    } catch {
+        //
+    }
 }
 
 async function getWalletAddress() {
